@@ -5,6 +5,11 @@ leftWristY = 0;
 rightWristX = 0;
 rightWristY = 0;
 
+function preload()
+{
+    song1 = loadSound("music.mp3");
+    song2 = loadSound("music2.mp3")
+}
 function setup()
 {
     canvas = createCanvas(400, 400);
@@ -37,12 +42,6 @@ function gotPoses(results)
     console.log("LeftWristX = " + leftWristX + ", leftWristY = " + leftWristY);
     console.log("RightWristY = " + rightWristX  + ", rightWristY = " + rightWristY);
     }
-}
-
-function preload()
-{
-    song1 = loadSound("music.mp3");
-    song2 = loadSound("music2.mp3")
 }
 
 function draw()
